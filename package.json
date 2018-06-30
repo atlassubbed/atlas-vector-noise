@@ -6,7 +6,7 @@
     "test-server": "mocha --colors --watch --recursive './test/**/*.test.js'",
     "test": "mocha --colors --recursive './test/**/*.test.js'"
   },
-  "main": "./src/index.js",
+  "main": "./src/VectorNoiseGenerator.js",
   "keywords": [
     "atlassubbed",
     "math",
@@ -24,7 +24,8 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "rewire": "^4.0.1"
   },
   "os": [
     "darwin",
