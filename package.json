@@ -39,5 +39,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/atlassubbed/atlas-vector-noise.git"
+  },
+  "dependencies": {
+    "atlas-quintic-smoothing": "^1.0.0"
   }
 }
