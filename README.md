@@ -33,7 +33,7 @@ Perlin noise requires a random grid to work. The grid defines random gradients a
 We can generate pseudorandom rectangular grids:
 
 ```javascript
-const ScalarNoiseGenerator = require("atlas-vector-noise");
+const VectorNoiseGenerator = require("atlas-vector-noise");
 // generates a 100x200 grid
 const rectGrid = new VectorNoiseGenerator(100, 200);
 ```
