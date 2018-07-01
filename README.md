@@ -152,7 +152,7 @@ squareCanvas.print()
 ```
 
 <p align="center">
-  <img alt="Image of periodic value noise with 9 interpolation points between every lattice point and a period of 4 in each dimension. Grid size: 10x10, Canvas Size: 400x400, Scale Factors: 10x10" src="docs/g10x10_o400x400_s10x10.png">
+  <img alt="Image of periodic Perlin noise with 9 interpolation points between every lattice point and a period of 4 in each dimension. Grid size: 10x10, Canvas Size: 400x400, Scale Factors: 10x10" src="docs/g10x10_o400x400_s10x10.png">
 </p>
 
 It took me 20+ iterations to get the image above. I was trying to get an image that had obvious repetition. One thing to note about Perlin noise is that the features tend to be much more regular than those in value noise, so it's harder to notice patterns.
@@ -241,7 +241,7 @@ squareCanvas.print()
 ```
 
 <p align="center">
-  <img alt="Using value noise to generate a mountain range." src="docs/rocky_mountains.png">
+  <img alt="Using Perlin noise to generate a mountain range." src="docs/rocky_mountains.png">
 </p>
 
 The first thing to note is how we're adding different "features" together. You can think of Perlin noise as having a certain frequency, depending on how large the underlying grid is and how many points you interpolate between each lattice point. When you are thinking about how to replicate something in the real world with Perlin noise, it helps to break down the real-world example as a sum of different frequency components. For example, mountain ranges tend to have large features like hills and smaller features like jagged rocks and gravel. Many functions can be decomposed as a sum of frequencies, thaks to Fourier decomposition.
@@ -249,7 +249,7 @@ The first thing to note is how we're adding different "features" together. You c
 You might notice how we added and subtracted equal amounts of `hills`, `rocks`, and `weather`. This was done to add a ruggedness to the texture of the mountain range. If we were to only add these components, the range would look less rocky and more smooth. The `mountains` grid has a 1:1 aspect ratio so that it stretches by a factor of `2.5` when rendered on a `1000x400` canvas, making it feel more like a long, contiguous mountain range than just a random assortment of bumps. Take a look at the larger valleys and peaks and notice how they tend to continue for a while on the horizontal axis:
 
 <p align="center">
-  <img alt="Using value noise to generate a mountain range." src="docs/rocky_mountains_long.png">
+  <img alt="Using Perlin noise to generate a mountain range." src="docs/rocky_mountains_long.png">
 </p>
 
 This "mountain" example is just the beginning! Go ahead and Google "perlin noise" to see all the kinds of awesome stuff you can generate with Perlin noise.
