@@ -256,4 +256,10 @@ This "mountain" example is just the beginning! Go ahead and Google "perlin noise
 
 ## caveats 
 
+#### optimization
+
 Perlin noise can be optimized by limiting the possible gradient vectors and doing clever bitwise operations. This module does not implement any of these optimizations. Doing these optimizations in javascript might be an act of futility, anyway. This module is mainly for educational purposes and fun.
+
+#### distribution
+
+By default, Perlin noise is non-uniformly distributed in `[-1, 1]`. The Perlin noise output from this module is incremented by one and then halved so that it lies in `[0, 1]`. If your images don't have enough values near the extrema, it's because Perlin noise tends to be closer to the mean value (`.5` in this module); very rarely do you get values close to the ends of the interval. You can manually restrict the boundary to `[.2, .8]` if you want to see more noise values closer to the endpoints.
