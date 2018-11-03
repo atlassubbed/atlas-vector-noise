@@ -4,7 +4,7 @@ const floor = n => Math.floor(n)
 
 const lerp = (a, b, x) => x * (b - a) + a;
 
-const dot = (v1, v2) => v1[0] * v2[0] + v1[1] * v2[1]
+const dot = (v1 = [0, 0], v2 = [0, 0]) => v1[0] * v2[0] + v1[1] * v2[1]
 
 const norm = v => {
   const mag = Math.sqrt(dot(v, v));
@@ -13,4 +13,12 @@ const norm = v => {
 
 const randDir = (rand = Math.random) => norm([rand() - .5, rand() - .5])
 
-module.exports = { randDir, floor, lerp, dot }
+const smooth = x => x * x * x * (x * (x * 6 - 15) + 10)
+
+module.exports = {
+  randDir,
+  floor,
+  lerp,
+  dot,
+  smooth
+}

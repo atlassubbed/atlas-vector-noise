@@ -75,10 +75,6 @@ assertion-error@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/assertion-error/-/assertion-error-1.1.0.tgz#e60b6b0e8f301bd97e5375215bda406c85118c0b"
 
-"atlas-quintic-smoothing@https://github.com/Prozi/atlas-quintic-smoothing":
-  version "1.0.0"
-  resolved "https://github.com/Prozi/atlas-quintic-smoothing#c6b535ff20352d448638bea394c8ed0372cfb45c"
-
 babel-code-frame@^6.22.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.26.0.tgz#63fd43f7dc1e3bb7ce35947db8fe369a3f58c74b"
